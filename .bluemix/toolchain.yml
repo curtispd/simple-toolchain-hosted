@@ -74,7 +74,7 @@ services:
           API_KEY: '{{form.pipeline.parameters.api-key}}'
         execute: true
   webide:
-    service_id: orion
+    service_id: foobar
 form:
   pipeline:
     parameters:
