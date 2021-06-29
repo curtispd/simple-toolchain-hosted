@@ -43,7 +43,6 @@ toolchain:
       $ref: "#/messages/template.gettingStarted"
   extrajunk4: "extrajunk4"
 services:
-  extrajunk5: "extrajunk5"
   sample-repo:
     extrajunk6: "extrajunk6"
     service_id: >
