@@ -16,7 +16,9 @@ template:
   required:
     - sample-build
     - sample-repo
+  extrajunk: "extrajunk"
   info:
+    extrajunk3: "extrajunk3"
     #original static git url and branch string definitions
     #git url: >-
     #  [https://github.com/open-toolchain/simple-toolchain-hosted](https://github.com/open-toolchain/simple-toolchain-hosted)
@@ -39,8 +41,11 @@ toolchain:
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
+  extrajunk4: "extrajunk4"
 services:
+  extrajunk5: "extrajunk5"
   sample-repo:
+    extrajunk6: "extrajunk6"
     service_id: >
       $env.source_provider ? $env.source_provider : 'hostedgit'
     parameters:
@@ -73,9 +78,10 @@ services:
           PROD_REGION_ID: '{{form.pipeline.parameters.prod-region}}'
           API_KEY: '{{form.pipeline.parameters.api-key}}'
         execute: true
-bogus: "stuff"
+extrajunk2: "extrajunk2"
 form:
   pipeline:
+    extrajunk7: "extrajunk7"
     parameters:
       prod-app-name: >
         $env.prodAppName ?
